@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tokio, Japón</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #094E8B;
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .intro {
+            background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border-left: 5px solid #6294DB;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            border-left: 4px solid;
+        }
+
+        .prices-card {
+            border-left-color: #6D6A1E;
+            background: linear-gradient(135deg, #fffff0 0%, #f8f9ff 100%);
+        }
+
+        .sites-card {
+            border-left-color: #766583;
+            background: linear-gradient(135deg, #f8f6f9 0%, #f0f4ff 100%);
+        }
+
+        h2 {
+            color: #094E8B;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2 i {
+            font-size: 1.5rem;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            position: relative;
+            padding-left: 25px;
+        }
+
+        li:before {
+            content: '▶';
+            color: #6294DB;
+            position: absolute;
+            left: 0;
+            font-size: 0.8rem;
+        }
+
+        .prices-card li:before {
+            color: #6D6A1E;
+        }
+
+        .sites-card li:before {
+            color: #766583;
+        }
+
+        .media-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .media-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .media-header {
+            background: linear-gradient(90deg, #094E8B, #6294DB);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .media-content {
+            padding: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #094E8B, #6294DB);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(9, 78, 139, 0.3);
+            margin-top: 20px;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(9, 78, 139, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .content-grid,
+            .media-section {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🗼 Tokio, Japón</h1>
+        
+        <div class="intro">
+            <p>Tokio, la capital de Japón, es una de las ciudades más fascinantes del mundo. Con una mezcla perfecta entre la tradición milenaria y la modernidad futurista, Tokio ofrece a sus visitantes una experiencia única. Desde templos antiguos como el Senso-ji hasta barrios ultra modernos como Shibuya y Shinjuku, la ciudad nunca deja de sorprender.</p>
+            <p>Además de su increíble cultura, Tokio también es conocida por su gastronomía, su tecnología avanzada y su transporte eficiente. Se recomienda pasar al menos 5 a 7 días en la ciudad para disfrutar plenamente de todo lo que tiene para ofrecer.</p>
+        </div>
+
+        <div class="content-grid">
+            <div class="card prices-card">
+                <h2><i class="fas fa-dollar-sign"></i> Precios Aproximados</h2>
+                <ul>
+                    <li>Alojamiento: desde 40 USD por noche (hostales) hasta 150+ USD (hoteles)</li>
+                    <li>Comida: 8–15 USD por comida en restaurantes económicos</li>
+                    <li>Transporte: 5–10 USD por día usando el metro</li>
+                    <li>Entradas a atracciones: entre 5 y 30 USD</li>
+                </ul>
+            </div>
+
+            <div class="card sites-card">
+                <h2><i class="fas fa-map-marker-alt"></i> Sitios para Visitar</h2>
+                <ul>
+                    <li>Templo Senso-ji</li>
+                    <li>Torre de Tokio</li>
+                    <li>Shibuya Crossing</li>
+                    <li>Parque Ueno y su zoológico</li>
+                    <li>Akihabara (zona de electrónica y anime)</li>
+                    <li>Palacio Imperial</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="media-section">
+            <div class="media-card">
+                <div class="media-header">
+                    🖼️ Imagen Representativa
+                </div>
+                <div class="media-content">
+                    <img src="https://content-viajes.nationalgeographic.com.es/medio/2024/09/03/tokio_133ce43a_1284581217_240903122054_1280x854.jpg" alt="Tokio, Japón">
+                </div>
+            </div>
+
+            <div class="media-card">
+                <div class="media-header">
+                    🎥 Video sobre Tokio
+                </div>
+                <div class="media-content">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/Ci5raxp37QE?si=u7FCUNinHBnB9CMS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-btn">
+            ← Volver a la página principal
+        </a>
+    </div>
+</body>
+</html>
