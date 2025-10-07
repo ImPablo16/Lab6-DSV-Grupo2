@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viajes turístico - Brasil</title>
+
+  <style>
+  :root{
+    --color-primario: #6D6A1E;
+    --color-secundario: #66294D;
+    --color-terciario: #766583;
+    --color-acento: #094E8B;
+    --blanco: #FFFFFF;
+    --gris-fondo: #F7F7F8;
+    --sombra: 0 6px 18px rgba(6,20,30,0.08);
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+  *{box-sizing:border-box}
+  html{font-size:16px}
+  body{margin:0;font-family:'Inter',system-ui,'Segoe UI',Roboto,'Helvetica Neue',Arial;background-color:var(--gris-fondo);color:#222;line-height:1.45}
+  #site-header{position:fixed;top:0;left:0;right:0;background:linear-gradient(90deg,rgba(13,26,45,0.98),rgba(9,78,139,0.95));color:var(--blanco);padding:0.75rem 1rem;z-index:1000;box-shadow:var(--sombra)}
+  .container{max-width:1100px;margin:0 auto;padding:0 1rem;display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;gap:0.75rem;align-items:center}
+  .brand h1{font-size:1.125rem;margin:0;font-weight:700}
+  .brand p{margin:0;font-size:0.8125rem;opacity:0.9}
+  nav ul{list-style:none;display:flex;gap:0.5rem;margin:0;padding:0}
+  nav a{display:inline-block;padding:0.45rem 0.75rem;text-decoration:none;color:var(--blanco);border-radius:12px;font-weight:600;font-size:0.95rem;transition:transform 160ms ease,background-color 160ms ease,box-shadow 160ms ease}
+  nav a:visited{opacity:0.95}
+  nav a:hover{transform:translateY(-3px);background:rgba(255,255,255,0.06);box-shadow:0 6px 14px rgba(6,20,30,0.12)}
+  nav a:active{transform:translateY(-1px) scale(0.995)}
+  .hero{margin-top:72px;background-image:linear-gradient(180deg,rgba(9,78,139,0.12),rgba(255,255,255,0.02));padding:1.25rem 0 2rem 0}
+  .hero-inner{max-width:1100px;margin:0 auto;padding:1rem}
+  .hero-grid{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
+  .hero-card{flex:1 1 420px;background:var(--blanco);border-radius:12px;box-shadow:var(--sombra);overflow:hidden;border:1px solid rgba(9,78,139,0.06)}
+  .hero-card img{width:100%;height:260px;object-fit:cover;display:block}
+  .hero-card .content{padding:1rem}
+  .hero-card h2{margin:0 0 0.75rem 0;font-size:1.25rem;color:var(--color-primario)}
+  .main{max-width:1100px;margin:1rem auto;padding:1rem}
+  .section{background:var(--blanco);padding:1rem;margin-bottom:1rem;border-radius:10px;border:1px solid rgba(6,20,30,0.03)}
+  .section h2{margin-top:0;color:var(--color-secundario)}
+  .cols{overflow:auto}
+  .col-left{float:left;width:62%;padding:0 1rem 1rem 0}
+  .col-right{float:right;width:38%;padding:0 0 1rem 1rem}
+  .col-right .card{background:linear-gradient(180deg,rgba(102,41,77,0.03),rgba(118,101,131,0.02));padding:0.75rem;border-radius:8px}
+  .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:0.5rem}
+  .gallery img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+  .btn{display:inline-block;padding:0.55rem 0.9rem;background:var(--color-acento);color:var(--blanco);border-radius:10px;text-decoration:none;font-weight:700;box-shadow:0 6px 14px rgba(9,78,139,0.12);border:none;cursor:pointer}
+  .btn:hover{transform:translateY(-3px)}
+  footer{padding:1rem 0;text-align:center;color:#444;font-size:0.95rem}
+  @media(max-width:900px){.col-left,.col-right{float:none;width:100%;padding:0}.gallery img{height:140px}.hero-card img{height:200px}}
+  @media(max-width:520px){.container{padding:0 0.75rem}nav ul{display:none}#site-header{padding:0.6rem}.brand h1{font-size:1rem}.hero-card img{height:160px}.gallery{grid-template-columns:1fr}}
+  .mt-05{margin-top:0.5rem}
+  .text-muted{color:#666}
+  </style>
+</head>
+<body>
+
+<header id="site-header">
+  <div class="container">
+    <div class="brand">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+        <rect width="24" height="24" rx="6" fill="var(--color-primario)" />
+        <circle cx="12" cy="9" r="2.6" fill="var(--blanco)" />
+        <path d="M5 16c1.8-2 5.5-2 8 0v3H5v-3z" fill="var(--color-terciario)" />
+      </svg>
+      <div>
+        <h1>Agencia Virtual</h1>
+        <p>Brasil — playas, selva y cultura</p>
+      </div>
+    </div>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="#descripcion">Inicio</a></li>
+        <li><a href="#lugares">Lugares</a></li>
+        <li><a href="#hospedaje">Hospedaje</a></li>
+        <li><a href="#transporte">Transporte</a></li>
+        <li><a href="#comida">Comida</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="titulo-hero">
+    <div class="hero-inner">
+      <div class="hero-grid">
+        <article class="hero-card">
+          <img src="https://humanidades.com/wp-content/uploads/2017/04/brasil-1-e1566159470787.jpg" alt="Panorámica de Brasil">
+          <div class="content">
+            <h2 id="titulo-hero">Brasil: diversidad y aventura</h2>
+            <p class="text-muted">Playas mundialmente famosas, selvas y ciudades vibrantes que invitan a explorar.</p>
+            <p class="mt-05"><a class="btn" href="#lugares">Ver lugares</a></p>
+          </div>
+        </article>
+        <aside class="hero-card">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/57/8a/a2/copacabana.jpg?w=900&h=500&s=1" alt="Playa de Copacabana">
+          <div class="content">
+            <h3>Experiencias imperdibles</h3>
+            <ul class="text-muted">
+              <li>Cristo Redentor y Pan de Azúcar</li>
+              <li>Explorar el Amazonas</li>
+              <li>Vivir Salvador de Bahía</li>
+            </ul>
+            <p class="mt-05"><a class="btn" href="#hospedaje">Ver hospedaje</a></p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="descripcion" class="main section">
+    <h2>Descripción</h2>
+    <p>Brasil es un país lleno de diversidad natural y cultural, conocido por sus playas paradisíacas, selvas exuberantes y ciudades vibrantes. Ofrece una combinación única de música, gastronomía, festivales y paisajes impresionantes que lo convierten en un destino turístico inolvidable.</p>
+    <div class="gallery mt-05">
+      <img src="https://humanidades.com/wp-content/uploads/2017/04/brasil-1-e1566159470787.jpg" alt="Panorámica de Brasil">
+      <img src="https://imag.bonviveur.com/brasil.jpg" alt="Comida brasileña">
+    </div>
+  </section>
+
+  <section id="lugares" class="main section cols">
+    <div class="col-left">
+      <h2>Lugares para visitar</h2>
+      <p class="text-muted">Algunos destinos que no debes perderte:</p>
+      <ul>
+        <li><strong>Cristo Redentor:</strong> La icónica estatua ubicada en Río de Janeiro.</li>
+        <li><strong>Playa de Copacabana:</strong> Famosa por su arena y ambiente.</li>
+        <li><strong>Pan de Azúcar:</strong> Vistas panorámicas y teleférico.</li>
+        <li><strong>Amazonas:</strong> Selva tropical con biodiversidad única.</li>
+        <li><strong>Salvador de Bahía:</strong> Cultura afrobrasileña y festivales.</li>
+      </ul>
+      <h3 class="mt-05">Videos recomendados</h3>
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;margin-top:0.5rem;">
+        <iframe src="https://www.youtube.com/embed/p9roL8ETcfo?si=o2bom74vi6yx_drJ" title="Video Brasil" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+      </div>
+    </div>
+    <aside class="col-right">
+      <div class="card">
+        <h4>Hospedaje</h4>
+        <p>Brasil ofrece opciones de hospedaje para todos los gustos y presupuestos:</p>
+        <ul>
+          <li>Hoteles de lujo: Desde $180 por noche en Río y São Paulo.</li>
+          <li>Hoteles medianos: Entre $80 y $120 por noche.</li>
+          <li>Pousadas y hostales: Desde $25 por noche.</li>
+        </ul>
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/143555367.jpg?k=b5873d0628bf20386e58b5f292f49148fdd51f3d9d091a03742d3673d62e634d&o=&hp=1" alt="Hotel en Brasil" style="width:100%;height:160px;object-fit:cover;border-radius:8px;margin-top:0.5rem">
+      </div>
+    </aside>
+  </section>
+
+  <section id="transporte" class="main section">
+    <h2>Transporte</h2>
+    <p>Brasil cuenta con varias opciones de transporte según la ciudad:</p>
+    <ul>
+      <li><strong>Metro:</strong> Presente en ciudades como Río y São Paulo, económico ($1 - $2).</li>
+      <li><strong>Autobuses urbanos:</strong> Económicos pero con tráfico variable.</li>
+      <li><strong>Taxis y apps:</strong> Uber, 99 y taxis tradicionales.</li>
+      <li><strong>Aviones internos:</strong> Para distancias largas entre ciudades.</li>
+    </ul>
+  </section>
+
+  <section id="comida" class="main section">
+    <h2>Comida</h2>
+    <p>La gastronomía brasileña es diversa y deliciosa. Algunas opciones y precios aproximados:</p>
+    <ul>
+      <li>Feijoada: $10 - $20 por persona.</li>
+      <li>Churrasco en rodizio: $20 - $35.</li>
+      <li>Comida callejera: $2 - $5.</li>
+      <li>Jugos tropicales y café: $1 - $4.</li>
+    </ul>
+  </section>
+
+  <p style="max-width:1100px;margin:0 auto;padding:0 1rem 2rem 1rem;"><a href="index.html">← Volver a la página principal</a></p>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Agencia Virtual Grupo 2 — Diseño: Ammy Murillo</p>
+  </div>
+</footer>
+
+</body>
+</html>
