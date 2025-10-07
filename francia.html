@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>París, Francia</title>
+    <style>
+        /* ================================
+           CSS Mejorado: Agencia de Viajes
+        ================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(to right, #f4f6f8, #e6ebf0);
+            color: #333;
+            line-height: 1.7;
+        }
+
+        /* ==============================
+           HEADER
+        ============================== */
+        header {
+            background-color: #094E8B;
+            color: #fff;
+            text-align: center;
+            padding: 35px 15px;
+            border-bottom: 5px solid #6D6A1E;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        /* ==============================
+           NAVEGACIÓN
+        ============================== */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 12px 20px;
+            border-radius: 15px;
+            background-color: #6D6A1E;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        }
+
+        nav ul li a:hover {
+            background-color: #6294DB;
+            transform: translateY(-3px);
+        }
+
+        nav ul li a:active {
+            background-color: #766583;
+            transform: scale(0.98);
+        }
+
+        nav ul li a:visited {
+            color: #fff;
+        }
+
+        /* ==============================
+           SECCIONES
+        ============================== */
+        section {
+            background-color: #ffffff;
+            padding: 40px;
+            margin: 40px auto;
+            width: 90%;
+            max-width: 1100px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            color: #094E8B;
+            margin-bottom: 25px;
+            border-left: 8px solid #6D6A1E;
+            padding-left: 15px;
+            font-size: 2rem;
+        }
+
+        /* ==============================
+           TEXTO E IMÁGENES
+        ============================== */
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 1.1rem;
+        }
+
+        img {
+            display: block;
+            margin: 25px auto;
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+        }
+
+        /* ==============================
+           LISTAS
+        ============================== */
+        ul {
+            margin: 15px 0 25px 40px;
+            list-style-type: square;
+            font-size: 1.05rem;
+        }
+
+        /* ==============================
+           COLUMNAS
+        ============================== */
+        .columnas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .columna {
+            flex: 1 1 45%;
+            background-color: #ecf0f1;
+            border-left: 8px solid #6294DB;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .columna:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+        }
+
+        /* ==============================
+           VIDEO
+        ============================== */
+        iframe {
+            display: block;
+            margin: 0 auto;
+            border-radius: 15px;
+            max-width: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        iframe:hover {
+            transform: scale(1.02);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+        }
+
+        /* ==============================
+           BOTÓN DECORATIVO
+        ============================== */
+        .boton-boleto {
+            display: inline-block;
+            background-color: #6294DB;
+            color: #fff;
+            font-weight: 700;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+        }
+
+        .boton-boleto:hover {
+            background-color: #094E8B;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+        }
+
+        /* ==============================
+           ENLACES
+        ============================== */
+        a {
+            color: #094E8B;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        a:hover {
+            color: #6294DB;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+
+        a:visited {
+            color: #766583;
+        }
+
+        /* ==============================
+           FOOTER
+        ============================== */
+        footer {
+            background-color: #6D6A1E;
+            color: #fff;
+            text-align: center;
+            padding: 25px;
+            font-weight: 600;
+            box-shadow: 0 -5px 10px rgba(0,0,0,0.2);
+        }
+
+        /* ==============================
+           RESPONSIVE DESIGN
+        ============================== */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .columna {
+                flex: 1 1 100%;
+            }
+            section {
+                width: 95%;
+                padding: 30px;
+            }
+            iframe {
+                height: 280px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 1.6rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            .boton-boleto {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>París, Francia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#detalles">Detalles</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#sitios">Sitios</a></li>
+                <li><a href="#video">Video</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p>París, conocida como la "Ciudad de la Luz" y también como la "Ciudad del Amor", es uno de los destinos turísticos más visitados del mundo. Conocida por su arte, cultura y gastronomía, es el lugar perfecto para una experiencia inolvidable.</p>
+            <p>Durante tu visita podrás recorrer monumentos icónicos como la Torre Eiffel, el Museo del Louvre y la Catedral de Notre Dame, además de disfrutar de un paseo por el río Sena.</p>
+            <img src="https://cdn2.civitatis.com/francia/paris/galeria/torre-eiffel-altura.jpg" alt="Torre Eiffel en París">
+        </section>
+
+        <section id="detalles">
+            <h2>Detalles del viaje</h2>
+            <ul>
+                <li>Tiempo total de estadía: 5 días</li>
+                <li>Precio total aproximado: $1200 USD</li>
+            </ul>
+            <button class="boton-boleto">Comprar Boleto</button>
+        </section>
+
+        <section id="precios" class="columnas">
+            <div class="columna">
+                <h2>Lista de precios aproximados</h2>
+                <ul>
+                    <li>Hospedaje: $500 USD</li>
+                    <li>Comida: $200 USD</li>
+                    <li>Transporte: $100 USD</li>
+                    <li>Entradas a museos y monumentos: $250 USD</li>
+                    <li>Compras: $150 USD</li>
+                </ul>
+            </div>
+            <div class="columna">
+                <img src="https://imag.bonviveur.com/francia.jpg" alt="Río Sena">
+            </div>
+        </section>
+
+        <section id="sitios">
+            <h2>Sitios a visitar y tiempo de estadía</h2>
+            <ul>
+                <li>Torre Eiffel: 1 día completo</li>
+                <li>Museo del Louvre: 1 día completo</li>
+                <li>Catedral de Notre Dame: Medio día</li>
+                <li>Arco del Triunfo: Medio día</li>
+                <li>Río Sena: 1 noche</li>
+                <li>Barrio Montmartre: 1 día</li>
+            </ul>
+            <img src="https://www.airtecnics.com/media/6385/Louvre-museum-in-Paris.jpg" alt="Museo del Louvre">
+        </section>
+
+        <section class="imagen-destino">
+            <h2>Imagen del destino</h2>
+            <img src="https://www.viajaryotraspasiones.com/wp-content/uploads/2022/02/tour-eiffel-paris-francia.jpg" alt="París">
+        </section>
+
+        <section id="video">
+            <h2>Video del destino</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EEeu7-xJX_c" frameborder="0" allowfullscreen></iframe>
+            <p><a href="https://youtu.be/EEeu7-xJX_c" target="_blank">Ver en YouTube</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Agencia de Viajes Virtual - París, Francia</p>
+    </footer>
+</body>
+</html>
