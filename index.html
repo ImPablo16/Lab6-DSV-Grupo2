@@ -1,25 +1,394 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Viajes Virtuales</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes Virtuales</title>
+    <link rel="stylesheet" href="style-home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <div class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <header class="header">
+                <h1 class="logo">🌍 Viajes Virtuales</h1>
+                <nav class="nav">
+                    <a href="nosotros.html" class="nav-link">Sobre Nosotros</a>
+                </nav>
+            </header>
 
-  <h1>Viajes Virtuales</h1>
-  <p>¡Bienvenido a un viaje sin límites! En nuestra plataforma, te invitamos a explorar el mundo desde la comodidad de tu hogar con experiencias virtuales inmersivas. Sumérgete en la rica historia de civilizaciones antiguas, maravíllate con la belleza de paisajes naturales impresionantes y descubre culturas fascinantes, todo a través de un viaje digital que combina imágenes, videos y narraciones cautivadoras.</p> 
- <p>Nuestros viajes virtuales te ofrecen guías interactivas y relatos envolventes que te transportarán a los rincones más remotos del planeta, permitiéndote vivir aventuras únicas sin la necesidad de un pasaporte. Conéctate con el mundo de una manera innovadora y vive una experiencia de aprendizaje y descubrimiento sin igual."</p>
+            <div class="hero-content">
+                <h1 class="hero-title">Explora el Mundo Sin Salir de Casa</h1>
+                <p class="hero-subtitle">Descubre culturas, paisajes y experiencias únicas a través de viajes virtuales inmersivos</p>
+            </div>
+        </div>
+    </div>
 
- <p>Haz clic en los destinos para comenzar tu aventura virtual:</p>
+    <div class="container">
+        <section class="intro-section">
+            <div class="intro-content">
+                <h2>¡Bienvenido a un viaje sin límites!</h2>
+                <p>En nuestra plataforma, te invitamos a explorar el mundo desde la comodidad de tu hogar con experiencias virtuales inmersivas. Sumérgete en la rica historia de civilizaciones antiguas, maravíllate con la belleza de paisajes naturales impresionantes y descubre culturas fascinantes.</p>
+                <p>Nuestros viajes virtuales te ofrecen guías interactivas y relatos envolventes que te transportarán a los rincones más remotos del planeta, permitiéndote vivir aventuras únicas sin la necesidad de un pasaporte.</p>
+                <div class="cta-box">
+                    <i class="fas fa-compass"></i>
+                    <span>Haz clic en los destinos para comenzar tu aventura virtual</span>
+                </div>
+            </div>
+        </section>
 
-    <ul>
-        <li><a href="brasil.html">Brasil</a></li>
-        <li><a href="suiza.html">Suiza</a></li>
-        <li><a href="francia.html">París, Francia</a></li>
-        <li><a href="japon.html">Tokio, Japón</a></li>
-        <li><a href="panama.html">Panamá</a></li>
-    </ul>
-    <a href="nosotros.html">Sobre nosotros</a>
+        <section class="destinations-section">
+            <h2 class="section-title">Destinos Destacados</h2>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="card-image brasil"></div>
+                    <div class="card-content">
+                        <h3>Brasil</h3>
+                        <p>Descubre la selva amazónica y las playas de Río</p>
+                        <a href="brasil.html" class="card-btn">
+                            Explorar <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
 
+                <div class="destination-card">
+                    <div class="card-image suiza"></div>
+                    <div class="card-content">
+                        <h3>Suiza</h3>
+                        <p>Montañas alpinas y lagos cristalinos</p>
+                        <a href="suiza.html" class="card-btn">
+                            Explorar <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image francia"></div>
+                    <div class="card-content">
+                        <h3>París, Francia</h3>
+                        <p>La ciudad del amor y la luz</p>
+                        <a href="francia.html" class="card-btn">
+                            Explorar <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image japon"></div>
+                    <div class="card-content">
+                        <h3>Tokio, Japón</h3>
+                        <p>Tradición milenaria y futurismo</p>
+                        <a href="japon.html" class="card-btn">
+                            Explorar <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image panama"></div>
+                    <div class="card-content">
+                        <h3>Panamá</h3>
+                        <p>El puente del mundo, el corazón del universo</p>
+                        <a href="panama.html" class="card-btn">
+                            Explorar <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 Viajes Virtuales. Todos los derechos reservados.</p>
+            <a href="nosotros.html" class="footer-link">
+                Conoce más sobre nosotros <i class="fas fa-heart"></i>
+            </a>
+        </footer>
+    </div>
+    <style>
+/* style-home.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1335&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 40px 0 100px;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background: white;
+    color: #333;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+/* Intro Section */
+.intro-section {
+    background: white;
+    margin-top: -50px;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.intro-content h2 {
+    color: #094E8B;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.intro-content p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+}
+
+.cta-box {
+    background: linear-gradient(135deg, #6D6A1E, #6294DB);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.cta-box i {
+    font-size: 1.5rem;
+}
+
+/* Destinations Section */
+.destinations-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+}
+
+.card-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.card-image.brasil {
+    background-image: url('https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+}
+
+.card-image.suiza {
+    background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+}
+
+.card-image.francia {
+    background-image: url('https://images.unsplash.com/photo-1502602898536-47ad22581b52?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+}
+
+.card-image.japon {
+    background-image: url('https://images.unsplash.com/photo-1540959733332-8a43c15015d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+}
+
+.card-image.panama {
+    background-image: url('https://images.unsplash.com/photo-1554465120235-d1d48b8cabe3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    color: #094E8B;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #094E8B, #6294DB);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.card-btn:hover {
+    gap: 15px;
+    background: linear-gradient(135deg, #6294DB, #766583);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 40px 0;
+    color: white;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #6294DB;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .intro-section {
+        padding: 30px;
+        margin-top: -30px;
+    }
+    
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .destinations-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-box {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .intro-section {
+        padding: 20px;
+    }
+    
+    .intro-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
+    </style>
 </body>
 </html>
