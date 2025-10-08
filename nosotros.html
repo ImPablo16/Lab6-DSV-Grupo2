@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nosotros - Viajes Virtuales</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #094E8B;
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .team-subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+            font-style: italic;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .team-card {
+            background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            border-left: 4px solid #6294DB;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .team-card:nth-child(2) {
+            border-left-color: #6D6A1E;
+        }
+
+        .team-card:nth-child(3) {
+            border-left-color: #766583;
+        }
+
+        .team-card:nth-child(4) {
+            border-left-color: #094E8B;
+        }
+
+        .team-card:nth-child(5) {
+            border-left-color: #6294DB;
+        }
+
+        .member-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #094E8B;
+            margin: 0 auto 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .member-name {
+            color: #094E8B;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .member-role {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .member-bio {
+            color: #555;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .team-description {
+            background: linear-gradient(135deg, #6D6A1E20 0%, #6294DB20 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+            text-align: center;
+            border: 2px dashed #6294DB;
+        }
+
+        .team-description h2 {
+            color: #094E8B;
+            margin-bottom: 15px;
+        }
+
+        .team-description p {
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #094E8B, #6294DB);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(9, 78, 139, 0.3);
+            margin-top: 20px;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(9, 78, 139, 0.4);
+            gap: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .member-image {
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .team-card {
+                padding: 20px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>👥 Nuestro Equipo</h1>
+        <p class="team-subtitle">Grupo No. 2 - Los creadores detrás de Viajes Virtuales</p>
+
+        <div class="team-description">
+            <h2>✨ Sobre Nosotros</h2>
+            <p>Somos un equipo apasionado por los viajes y la tecnología, dedicados a crear experiencias virtuales inmersivas que te permitan explorar el mundo desde la comodidad de tu hogar. Combinamos nuestra creatividad y habilidades técnicas para brindarte los mejores destinos virtuales.</p>
+        </div>
+
+        <div class="team-grid">
+            <div class="team-card">
+                <img src="https://www.shutterstock.com/image-photo/ubon-ratchathani-thailand-january-27-600nw-247527613.jpg" alt="Ammy Murillo" class="member-image">
+                <h3 class="member-name">Ammy Murillo</h3>
+                <p class="member-role">Diseñadora UX/UI</p>
+                <p class="member-bio">Apasionada por crear experiencias visuales atractivas y funcionales que hagan los viajes virtuales inolvidables.</p>
+            </div>
+
+            <div class="team-card">
+                <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/is8rDPGsGlcg/v1/-1x-1.jpg" alt="Kevin Marcucci" class="member-image">
+                <h3 class="member-name">Kevin Marcucci</h3>
+                <p class="member-role">Desarrollador Frontend</p>
+                <p class="member-bio">Especialista en crear interfaces interactivas y experiencias web fluidas para nuestros viajeros virtuales.</p>
+            </div>
+
+            <div class="team-card">
+                <img src="https://e01-xlk-ue-marca.uecdn.es/uploads/2025/02/18/67b4ff04e7d85.jpeg" alt="Cristal Pinilla" class="member-image">
+                <h3 class="member-name">Cristal Pinilla</h3>
+                <p class="member-role">Investigadora de Destinos</p>
+                <p class="member-bio">Se encarga de descubrir y documentar los destinos más fascinantes para nuestras experiencias virtuales.</p>
+            </div>
+
+            <div class="team-card">
+                <img src="https://i.pinimg.com/474x/c8/2a/c9/c82ac9506d49543b2929807d99bcb265.jpg" alt="Pablo Sánchez" class="member-image">
+                <h3 class="member-name">Pablo Sánchez</h3>
+                <p class="member-role">Coordinador de Proyectos</p>
+                <p class="member-bio">Asegura que cada experiencia virtual sea perfecta y que todos los destinos estén cuidadosamente elaborados.</p>
+            </div>
+
+            <div class="team-card">
+                <img src="https://i.pinimg.com/236x/d7/7e/31/d77e31b4f7c02493d585c8fb34f6d956.jpg" alt="Daniel Villareal" class="member-image">
+                <h3 class="member-name">Daniel Villareal</h3>
+                <p class="member-role">Especialista en Contenidos</p>
+                <p class="member-bio">Crea las narrativas y guías interactivas que hacen que cada viaje virtual sea una aventura única.</p>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Volver a la página principal
+            </a>
+        </div>
+    </div>
+</body>
+</html>
